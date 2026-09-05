@@ -1,2 +1,43 @@
-# local-email-validator
-Verificador de e-mails executado localmente, desenvolvido para reduzir a dependência de serviços externos e otimizar o processo de validação.
+# Local Email Validator
+
+<p align="center">
+  <img width="1252" height="945" alt="image" src="https://github.com/user-attachments/assets/162b1a89-6ffb-457c-bea6-b43fa6895caa" />
+</p>
+
+## Sobre o projeto
+
+O **Local Email Validator** foi desenvolvido para facilitar a análise de listas de e-mails, oferecendo uma interface simples e objetiva para identificação e validação de contatos.
+
+## Funcionalidades
+
+- Validação de endereços de e-mail
+- Análise de informações relacionadas ao contato
+- Processamento de múltiplos registros
+- Interface web intuitiva
+- Organização dos resultados
+
+## Tecnologias
+
+- Python
+- FastAPI
+- JavaScript
+- HTML5
+- CSS3
+
+## Demonstração
+
+A versão disponibilizada neste repositório tem como objetivo apresentar a **interface e a experiência de uso do projeto**.
+
+> Algumas funcionalidades e componentes da aplicação original não estão disponíveis neste repositório.
+
+## Preview
+
+A interface foi desenvolvida com foco em **simplicidade, clareza e eficiência**, permitindo visualizar os resultados de forma organizada.
+
+## Autora
+
+**Ingryd Bacelar**
+
+© 2026 Ingryd Bacelar. Todos os direitos reservados.
+
+Este projeto é disponibilizado exclusivamente para fins de demonstração e portfólio. É proibida a reprodução, cópia, modificação, distribuição ou utilização comercial do código sem autorização prévia da autora.
