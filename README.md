@@ -30,6 +30,12 @@ A versão disponibilizada neste repositório tem como objetivo apresentar a **in
 
 > Algumas funcionalidades e componentes da aplicação original não estão disponíveis neste repositório.
 
+<p align="center">
+  <a href="https://ingrydbacelar.github.io/local-email-validator/">
+    <img src="https://img.shields.io/badge/🔗%20Visualizar%20demonstração-166534?style=for-the-badge&logoColor=white" alt="Visualizar demonstração">
+  </a>
+</p>
+
 ## Preview
 
 A interface foi desenvolvida com foco em **simplicidade, clareza e eficiência**, permitindo visualizar os resultados de forma organizada.
