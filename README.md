@@ -1,7 +1,7 @@
 # Local Email Validator
 
 <p align="center">
-  <img width="1127" height="1015" alt="Captura de tela 2026-09-05 195154" src="https://github.com/user-attachments/assets/51ffb79d-6c26-46f3-9963-6ac7540d740b" />
+  <img width="1148" height="1021" alt="Captura de tela 2026-09-05 201602" src="https://github.com/user-attachments/assets/b9338276-b7cf-4373-9c7b-a2339d0509b9" />
 </p>
 
 ## Sobre o projeto
