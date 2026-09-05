@@ -1,4 +1,3 @@
-/* Validador de E-mails — tema verde escuro / tecnologia */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
 :root {
@@ -50,7 +49,7 @@ body::before {
 
 .page { position: relative; max-width: 880px; margin: 0 auto; padding: 64px 24px 96px; }
 
-/* --- Header --- */
+/* HEADER */
 .page__header { margin-bottom: 40px; }
 .page__title {
   font-family: var(--mono); font-size: 34px; font-weight: 700; letter-spacing: -0.02em;
@@ -72,7 +71,7 @@ body::before {
 @keyframes blink { to { visibility: hidden; } }
 .page__subtitle { font-size: 15px; line-height: 1.55; color: var(--text-muted); margin: 0; max-width: 580px; }
 
-/* --- Painel --- */
+/* PAINEL */
 .panel, .table-wrap {
   background: rgba(16,32,26,0.88);
   border: 1px solid var(--panel-border);
@@ -113,19 +112,19 @@ body::before {
 
 .email-count { font-family: var(--mono); font-size: 13px; color: var(--accent); }
 
-/* --- Progresso --- */
+/* PROGRESSO */
 .progress-wrap { margin-top: 20px; display: flex; align-items: center; gap: 12px; }
 .progress-bar { flex: 1; height: 6px; background: var(--input); border: 1px solid var(--panel-border); border-radius: 999px; overflow: hidden; }
 .progress-bar__fill { height: 100%; width: 0%; background: var(--accent); box-shadow: 0 0 12px var(--accent); transition: width .2s ease; }
 .progress-label { font-family: var(--mono); font-size: 13px; color: var(--text-muted); min-width: 72px; text-align: right; }
 
-/* --- Erro --- */
+/* ERRO */
 .error-box {
   margin-top: 16px; padding: 12px 14px; border-radius: 8px; font-family: var(--mono);
   background: rgba(255,107,90,0.1); border: 1px solid rgba(255,107,90,0.4); color: var(--red); font-size: 13.5px;
 }
 
-/* --- Resultados --- */
+/* RESULTADOS */
 .results { margin-top: 36px; }
 .results__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
 .results__title { font-family: var(--mono); font-size: 16px; font-weight: 600; margin: 0; }
@@ -162,7 +161,7 @@ body::before {
 .cell-email { color: var(--text); }
 .cell-reason { color: var(--text-muted); }
 
-/* Badge de veredito (usa data-verdict definido no app.js) */
+/* Badge de veredito */
 .cell-verdict { --v: var(--text-muted); }
 .cell-verdict[data-verdict="Deliverable"] { --v: var(--green); }
 .cell-verdict[data-verdict="Risky ≥ 60%"] { --v: var(--red); }
@@ -174,7 +173,7 @@ body::before {
   background: var(--v); box-shadow: 0 0 8px var(--v); vertical-align: middle;
 }
 
-/* --- Responsivo --- */
+/* RESPONSIVO */
 @media (max-width: 640px) {
   .page { padding: 36px 16px 64px; }
   .page__title { font-size: 24px; }
