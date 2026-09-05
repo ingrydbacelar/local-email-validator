@@ -38,6 +38,6 @@ A interface foi desenvolvida com foco em **simplicidade, clareza e eficiência**
 
 **Ingryd Bacelar**
 
-© 2026 Ingryd Bacelar. Todos os direitos reservados.
+> © 2026 Ingryd Bacelar. Todos os direitos reservados.
 
-Este projeto é disponibilizado exclusivamente para fins de demonstração e portfólio. É proibida a reprodução, cópia, modificação, distribuição ou utilização comercial do código sem autorização prévia da autora.
+> Este projeto é disponibilizado exclusivamente para fins de demonstração e portfólio. É proibida a reprodução, cópia, modificação, distribuição ou utilização comercial do código sem autorização prévia da autora.
