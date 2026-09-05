@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validador de E-mails</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page__header">
+      <h1 class="page__title">
+        <span class="page__badge"><span class="page__badge-dot"></span>LOCAL · SEM ENVIO</span>
+        <span class="page__title-text">Validador de <span class="text-accent">E-mails</span></span>
+      </h1>
+      <p class="page__subtitle">Verificação de sintaxe, domínio, MX e SMTP — tudo processado localmente, nenhum e-mail é enviado.</p>
+    </header>
+
+    <main class="panel">
+      <label for="email-input" class="panel__label">Cole a lista de e-mails</label>
+      <textarea
+        id="email-input"
+        class="input-area"
+        placeholder="joao@empresa.com&#10;maria@empresa.com&#10;teste@empresa.com&#10;&#10;Também aceita texto colado do Excel, tabelas Markdown ou listas com vírgula."
+        spellcheck="false"
+      ></textarea>
+
+      <div class="panel__actions">
+        <button id="validate-btn" class="btn-primary">
+          <span id="validate-btn-label">VALIDAR E-MAILS</span>
+        </button>
+        <span id="email-count" class="email-count"></span>
+      </div>
+
+      <div id="progress-wrap" class="progress-wrap" hidden>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-bar__fill"></div>
+        </div>
+        <span id="progress-label" class="progress-label">0 / 0</span>
+      </div>
+
+      <div id="error-box" class="error-box" hidden></div>
+    </main>
+
+    <section id="results-section" class="results" hidden>
+      <div class="results__header">
+        <h2 class="results__title">Resultado</h2>
+        <div class="results__header-right">
+          <div class="results__summary" id="results-summary"></div>
+          <button id="download-btn" class="btn-secondary" hidden>
+            <span>Baixar planilha</span>
+          </button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>E-MAIL</th>
+              <th>RESULTADO</th>
+              <th>MOTIVO</th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
