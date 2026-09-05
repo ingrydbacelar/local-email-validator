@@ -39,7 +39,7 @@ body {
   position: relative;
 }
 
-/* linha de varredura (CRT) */
+/* LINHA DE VARREDURA (CRT) */
 body::before {
   content: ""; pointer-events: none; position: fixed; left: 0; right: 0; top: 0; height: 120px;
   background: linear-gradient(to bottom, transparent, rgba(61,255,138,0.06), transparent);
