@@ -1,19 +1,3 @@
-/**
- * Validador de E-mails — lógica da interface.
- *
- * Fluxo:
- *   1. Usuário cola o texto e clica em "VALIDAR E-MAILS".
- *   2. Abrimos um WebSocket em /ws/validate e enviamos { text }.
- *   3. O servidor extrai os e-mails e envia:
- *        { type: "start", total }
- *        { type: "result", index, total, email, verdict_label, reason }  (um por e-mail)
- *        { type: "done" }
- *      ou, se não houver e-mails no texto:
- *        { type: "error", message }
- *   4. Atualizamos a barra de progresso e adicionamos cada linha à
- *      tabela assim que o resultado chega.
- */
-
 (() => {
   const inputEl = document.getElementById("email-input");
   const validateBtn = document.getElementById("validate-btn");
@@ -29,7 +13,7 @@
   const downloadBtn = document.getElementById("download-btn");
 
   let socket = null;
-  let allResults = []; // acumula { email, verdictLabel, reason } para o download
+  let allResults = []; 
 
   // Atualiza o contador de e-mails detectados enquanto o usuário digita/cola.
   inputEl.addEventListener("input", updateEmailCountPreview);
@@ -40,7 +24,7 @@
   }
 
   // Contagem simples no cliente, só para feedback imediato. A extração
-  // "de verdade" acontece no backend (app/extractor.py).
+  // acontece no backend.
   function countLikelyEmails(text) {
     const matches = text.match(/[a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g);
     if (!matches) return 0;
